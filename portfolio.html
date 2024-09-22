@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+header{
+   height: 120px;
+    background-color: rgb(255, 164, 121);
+    border-radius: 5px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    
+}
+header:hover {
+    background-color: rgb(255, 134, 91); 
+}
+main{
+    padding: 20px;
+    margin-top: 140px;
+}
+.header-section  {
+   color: white;
+    text-align: center;
+    
+}
+header>div>div{
+    display: inline;
+    margin: 20px;
+   font-weight: 300;
+   color: white;
+   
+}
+header h1{
+    margin: 0;
+}
+p.header-section {
+   opacity: 0.8;
+}
+div.header-section a{
+    text-decoration: none;
+    color: white;
+}
+div.header-section a:hover{
+    color: rgb(255, 204, 174);
+}
+div.header-section a:active {
+    color: yellow; 
+}
+.about-section , .projects ,.contact , footer{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+     box-shadow: 0px 4px 10px #b66464;
+     transition: transform 0.3s, box-shadow 0.3s;
+     position: relative;
+}
+.about-section:hover , .button-group:hover,.projects:hover , .contact:hover  {
+            transform: translate(-5px, -5px);
+            box-shadow: 6px 5px 5px rgb(109, 98, 98);
+        }
+
+.about-section div {
+    display: inline-block;
+}
+.about-section img{
+    width: 170px;
+
+    border-radius: 50%;
+    position: absolute;
+    left: 400px;
+    top: 200px;
+}
+#blue-div{
+    background-color: rgb(247, 141, 99);
+    width: 250px;
+    position: relative;
+    top: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+.button-group{
+    background-image : url(./img/sailboat.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 40px;
+    margin: 40px 10px;
+    border-radius: 5px;
+     box-shadow: 0px 4px 10px #b66464;
+     transition: transform 0.3s, box-shadow 0.3s;
+     
+}
+.button-group button{
+    border-radius: 10px;
+    padding: 20px;
+    margin: 8.9px;
+    font-size:14px;
+    border: 0;
+    background-color:rgb(255, 164, 121); 
+    color: white;
+    opacity: 1;
+}
+
+.button-group button:hover {
+    transform: translateY(-7px);
+    background-color: rgb(255, 134, 91);
+}
+.button-group button:active {
+    transform: translateY(2px);
+    background-color: rgb(255, 100, 60);
+}
+.button-group button:focus {
+    outline: 2px solid rgba(252, 252, 74, 0.63);
+}
+div.buttons {
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 10px;
+}
+#projects-box1 ,#projects-box2{
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: medium;
+}
+#projects-box1{
+    background-color: rgba(255, 166, 0, 0.623);
+}
+#projects-box2{
+    background-color: rgba(255, 166, 0, 0.418);
+}
+.paltforms{
+text-align: center;
+background-color: rgba(255, 68, 0, 0.671);
+height: 200px;
+padding: 20px;
+margin: 30px;
+border-radius: 10px;
+
+}
+label, input, textarea, #contact-btn {
+    display: block; 
+    margin-bottom: 10px; 
+    width: 60%; 
+}
+input , textarea{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+input:focus, textarea:focus {
+    outline: 2px solid rgb(255, 164, 121);
+}
+#contact-btn{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(236, 202, 138);
+    border: 0;
+    color: white;
+    font-size: medium;
+}
+#contact-btn:active {
+    background-color: rgb(255, 134, 91); 
+}
+.arrow{
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 101;
+}
+footer{
+    text-align: center;
+    background-color:#b66464;
+}
+</style>
+<body>
+   <header>
+    <h1 class="header-section ">Menna Almassri</h1>
+    <p  class="header-section ">Computer Engineering | Programmer | Student</p>
+    <div  class="header-section ">
+        <div><a href="#">About me</a> </div>
+        <div><a href="#"> Skils</a></div>
+        <div><a href="#">Projects</a></div>
+        <div><a href="#">Contact</a></div>
+    </div>
+   </header> 
+   <main>
+<div class="about-section" >
+    <h2>About Me</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint error alias autem pariatur quisquam beatae delectus 
+        nostrum placeat voluptates recusandae cum omnis  nesciunt architecto distinctio perferendis, neque incidunt
+         tempore veniam?</p>
+       <div id="blue-div"><h3>dolor sit, amet consectetur</h3>Lorem ipsum dolor sit, amet consectetur adipisicing eli 
+        dicta qui eius magni, ad enim molestias ipsam possimusdae cum omni
+         ad enim molestias d enim molestias ipsam possimusdae cum omnis 
+         nesciunt architecto distinctio perferendis, neque incidunt perspiciatis esse sunt facere?</div>
+         <img  src="./img/bandmember.jpg" alt="img">
+</div>
+<div class="button-group">
+    <div class="buttons">
+    <button>HTML5 & CSS3</button>
+    <button>Javascript(ES6+)</button>
+    <button>React & Redux</button>
+    <button>Node.js & Express</button>
+    <button>SQL & NoSQL Databases</button>
+    <button>Git & Git hub</button>
+    <button>Responsive Design</button>
+</div>
+</div>
+<div class="projects">
+    <h1>Projects</h1>
+    <div id="projects-box1">
+     <h2>Lorem ipsum dolor</h2>
+     <p>Lorem ipsum dolor sit amae modi adila veritatis laborum loribus odit doloremque 
+        autem ea dolorum quis!</p>
+    </div>
+    <div id="projects-box2">
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sii adila veritatis laborum loribus odit doloremque tatis laborum loribus odit doloremque
+           autem ea dolorum quis!</p>
+       </div>
+    <div class="paltforms">
+        <h3>Blog Platforms</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error tota
+            ea, vel rem quaerat molees id dicta! Maxime impedit tempore minus facere et.</p>
+    </div>
+   
+</div>
+<div class="contact">
+    <h2>Contact Me!</h2>
+    <p>If you have any questions you can send me a massage</p>
+    <label for="name">Name : </label>
+    <input id="name" type="text" placeholder="Name">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Email">
+    <label for="massage" >Massege : </label>
+    <textarea></textarea>
+    <button id="contact-btn">Send </button>
+</div>
+<img class="arrow" src="./img/vecteezy_directional-arrow-on-transparent-background_17177974.png">
+   </main>
+   <footer>
+    Menna@ 2024
+   </footer>
+</body>
+</html>
